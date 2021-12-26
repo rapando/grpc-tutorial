@@ -1,0 +1,16 @@
+syntax = "proto3";
+package machine;
+option go_package = "github.com/rapando/grpc-tutorial/machine";
+
+service Machine {
+    rpc Execute( Instruction) returns ( Result) {}
+}
+
+message Instruction {
+    string operator=1;
+    int32 operand=2;
+}
+
+message Result {
+    string output=1;
+}

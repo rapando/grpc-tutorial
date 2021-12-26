@@ -1,0 +1,4 @@
+.idea
+.vscode
+machine/*go
+go.sum
