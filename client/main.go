@@ -41,7 +41,6 @@ func main() {
 }
 
 func runExecute(client machine.MachineClient, instructions []*machine.Instruction) {
-	// sends a stream of calls
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
 
