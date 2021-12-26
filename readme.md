@@ -24,5 +24,7 @@ protoc --go_out=. \
 To run:
 
 ```sh
+go mod tidy # run this only once.
+
 go run server/main.go
 go run client/main.go
